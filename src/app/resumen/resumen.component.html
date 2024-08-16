@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h4>Información del Cliente</h4>
+      </div>
+      <div class="card-body">
+        <div *ngIf="cliente">
+          <p><strong>Primer Nombre:</strong> {{ cliente.firstName }}</p>
+          <p><strong>Primer Apellido:</strong> {{ cliente.lastName }}</p>
+          <p><strong>Segundo Apellido:</strong> {{ cliente.secondLastName }}</p>
+          <p><strong>Teléfono:</strong> {{ cliente.phone }}</p>
+          <p><strong>Dirección:</strong> {{ cliente.address }}</p>
+          <p><strong>Ciudad de Residencia:</strong> {{ cliente.city }}</p>
+          <button class="btn btn-secondary btn-block mt-3" (click)="volver()">Volver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
